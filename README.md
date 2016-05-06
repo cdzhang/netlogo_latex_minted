@@ -8,13 +8,16 @@ Thanks to Jchiele
 Installation method (tested on Ubuntu 16.04)
 First you must have python installed, if not, install by
 >sudo apt-get install python
+
 Then you must have pygments installed, if not, install by
 >sudo apt-get install python-pygments
 
 pygment will probably installed in /usr/bin or /usr/local/bin, test that by
 >which pygmentize
+
 suppose it is installed in /usr/bin, copy the lexer file to the corresponding libary
 >sudo cp netlogo.py /usr/lib/python2.7/dist-packages/pygments/lexers/
+
 Then go to the lexer directory and run the mapping 
 >sudo cd /usr/lib/python2.7/dist-packages/pygments/lexers
 >sudo python _mapping.py
@@ -45,5 +48,6 @@ end
 
 save this file to "try.tex"
 >pdfLatex -shell-escape try.tex
+
 if you are using IDE like texMaker, configure the editor to add -shell-escape after pdfLatex
 
