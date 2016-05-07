@@ -7,7 +7,7 @@ These two files are created from
 "https://sourceforge.net/projects/netlogo-pygment/", with very few changes. 
 Thanks to Jchiele
 
-##Installation method (tested on Ubuntu 16.04 and Mac OS X EI Capitan)
+###Installation method (tested on Ubuntu 16.04 and Mac OS X EI Capitan)
 First you must have python installed, if not, install by (on Ubuntu)
 ```
 sudo apt-get install python
@@ -26,9 +26,9 @@ pygment will probably installed in /usr/bin or /usr/local/bin, test that by
 ```
 which pygmentize
 ```
-_On Ubuntu, if pygments is installed in /usr/local/bin, the libaray is in/usr/local/lib. If it is installed in /usr/bin, the libarary is in /usr/lib/_
+_On Ubuntu, if pygments is installed in /usr/local/bin, the library is in/usr/local/lib. If it is installed in /usr/bin, the library is in /usr/lib/_
 
-copy the **lexer** file to the the **lexer** libary
+copy the **lexer** file to the the **lexer** library
 ```
 sudo cp netlogo.py /usr/lib/python2.7/dist-packages/pygments/lexers/
 ```
@@ -38,7 +38,7 @@ sudo cd /usr/lib/python2.7/dist-packages/pygments/lexers
 sudo python _mapping.py
 ```
 Now add the **style** file to **style** library
-```
+```shell
 sudo cp Nlogo.py /usr/lib/python2.7/dist-packages/pygments/styles/
 ```
 Congratulations! Now the configuration is ready!
@@ -66,6 +66,8 @@ save this file to "try.tex"
 ```
 pdfLatex -shell-escape try.tex
 ```
+If you are using IDE like texMaker, configure the editor to add -shell-escape after pdfLatex
+
 Then you can view the "try.pdf" file!
-if you are using IDE like texMaker, configure the editor to add -shell-escape after pdfLatex
+
 
